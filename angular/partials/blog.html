@@ -1,0 +1,93 @@
+﻿<!--SECTION BLOG-->
+
+
+ <section id="project" class="cd-section section-blog">
+ <div class="container">
+          <div class="row">
+            <h1 class="t-blog"> BLOG </h1>
+           <div class="col-md-8">
+             <div class="box-content">
+
+		  </div>
+          <div class="col-md-4">
+          <div class="box-content right-position">
+               <div class="blog-right-column">
+                 <h2>Categories</h2>
+
+               </div>
+            </div>
+            <div class="box-content blog-r-posts">
+               <div class="blog-right-column">
+                 <h2>Recent Posts</h2>
+                 
+               </div>
+            </div>
+          </div>
+        </div><!--close row-->
+      </div><!--close container-->
+ </section>
+ <hr />
+ <section id="relatedprojects" class="cd-section">
+  <div class="container">
+          <div class="row">
+           <div class="col-md-12">
+             <div class="box-content box-carousel">
+             <h1> RELATED PROJECTS </h1>
+
+               <div id="owl-demo-details" class="owl-carousel owl-theme owl-details">
+                  <div class="item">
+                     <img src="http://placehold.it/1100x1057" alt="" />
+                     <p class="details-title">Martin J.</p>
+                     <p class="details-desc">Details page</p>
+                  </div>
+                  <div class="item">
+                     <img src="http://placehold.it/1100x1057" alt="" />
+                     <p class="details-title">App Design</p>
+                     <p class="details-desc">Details page</p>
+                  </div>
+                  <div class="item">
+                     <img src="http://placehold.it/1100x1057" alt="" />
+                     <p class="details-title">Phone App</p>
+                     <p class="details-desc">Details page</p>
+                  </div>
+                  <div class="item">
+                     <img src="http://placehold.it/1100x1057" alt="" />
+                     <p class="details-title">Gravity</p>
+                     <p class="details-desc">Details page</p>
+                  </div>
+                </div>
+               </div>
+		    </div><!--close 12-->
+        </div><!--close row-->
+      </div><!--close container-->
+ </section>
+
+<script type="text/javascript">
+    /********************************************
+    CLOSE PAGE DETAIL
+    ********************************************/
+    $(document).ready(function () {
+        $(".close-redirect").click(function (event) {
+            event.preventDefault();
+            linkLocation = this.href;
+            $("body").fadeOut(1000, redirectPage);
+        });
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+    });
+   </script>
+<script type="text/javascript">
+    /********************************************
+    CAROUSEL DETAIL
+    ********************************************/
+    $("#owl-demo-details").owlCarousel({
+
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+        items: 4,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [979, 3]
+
+    });
+</script>
